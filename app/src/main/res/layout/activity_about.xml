@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.AboutActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <ImageView
+        android:layout_width="@dimen/one_hundred"
+        android:layout_height="@dimen/one_hundred"
+        android:id="@+id/imageView7"
+        android:src="@mipmap/n365"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/thirty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/eighteen_fifteen"
+        android:layout_marginTop="@dimen/fifteen"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/thirteen_eleven"
+        android:id="@+id/version"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_top" />
+
+    <RelativeLayout
+        android:id="@+id/updateRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_marginTop="@dimen/about_toptext"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_below="@+id/version"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:src="@drawable/index_fenlei3x" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:text="@string/Version_update"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PhoneRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:src="@drawable/index_fenlei3x" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:text="@string/Customer_service_telephone"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0755-23026684"
+            android:layout_marginRight="@dimen/fifteen"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_gray"
+            android:id="@+id/textView13"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView9"
+            android:layout_toStartOf="@+id/imageView9" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/updateRelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_below="@+id/PhoneRelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/imageView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/text_gray"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/thirteen_eleven"
+            android:layout_marginRight="@dimen/fifteen"
+            />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:text="@string/WeChat_public_no"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView65"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/PhoneRelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright@2016 深圳市绝搭科技有限公司"
+        android:textSize="@dimen/ten_eight"
+        android:id="@+id/textView87"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/fifteen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

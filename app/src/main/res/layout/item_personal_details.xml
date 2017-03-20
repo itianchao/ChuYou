@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/topRelativeLayout"
+        android:background="@color/title"
+        android:layout_height="0dp">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/one_hundred_and_eighty_five"
+        android:id="@+id/personal_set"
+        android:background="@color/title"
+
+        android:layout_below="@+id/topRelativeLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:id="@+id/relativeLayout9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:layout_width="@dimen/fifty"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/press_image_back"
+                android:paddingRight="@dimen/twenty"
+                android:id="@+id/back"
+                android:background="@null"/>
+
+        </RelativeLayout>
+        <com.jueda.ndian.view.CircleImageView
+            android:id="@+id/HeadImage"
+            android:layout_height="@dimen/sixty_five"
+            android:layout_width="@dimen/sixty_five"
+            android:layout_marginTop="@dimen/fifteen_thirteen_dip"
+            android:layout_below="@+id/relativeLayout9"
+            android:layout_marginBottom="@dimen/fifteen_thirteen_dip"
+            android:layout_centerHorizontal="true">
+        </com.jueda.ndian.view.CircleImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:maxWidth="@dimen/two_hundred"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/sixteen_fourteen"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/ten"
+            android:id="@+id/NickNameTextView"
+            android:layout_below="@+id/HeadImage"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sexImage"
+            android:src="@drawable/man"
+            android:layout_toRightOf="@+id/NickNameTextView"
+            android:layout_toEndOf="@+id/NickNameTextView"
+            android:layout_below="@+id/HeadImage"
+            android:layout_alignBottom="@+id/NickNameTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="255级"
+            android:gravity="center"
+            android:paddingRight="@dimen/two"
+            android:paddingLeft="@dimen/two"
+            android:layout_marginTop="@dimen/ten"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/ten_eight"
+            android:id="@+id/LveTextView"
+            android:background="@drawable/box"
+            android:layout_below="@+id/NickNameTextView"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty"
+        android:text="话题"
+        android:id="@+id/textView42"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/fifteen"
+        android:layout_below="@+id/personal_set"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:id="@+id/imageView70"
+        android:layout_below="@+id/textView42"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

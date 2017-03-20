@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/seventy_five"
+        android:background="@drawable/xian_gray"/>
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E0E0E0"
+        android:textColor="#454545"
+        android:layout_weight="1.0"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/seventy_five"
+    android:background="@drawable/press_white_gray_relative">
+    <com.jueda.ndian.view.CircleImageView
+        android:layout_width="@dimen/forty_five"
+        android:layout_height="@dimen/forty_five"
+        android:id="@+id/HeadImage"
+        android:layout_margin="@dimen/fifteen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/One_hundred_and_fifty_Two_hundred"
+        android:id="@+id/title"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/HeadImage"
+        android:layout_toEndOf="@+id/HeadImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Kicked_out"
+        android:gravity="center"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingBottom="@dimen/ten"
+        android:paddingTop="@dimen/ten"
+        android:layout_marginRight="@dimen/forty_thirty_dip"
+        android:textSize="@dimen/thirteen_eleven"
+        android:id="@+id/KickedOutTextView"
+        android:background="@drawable/press_button_red_white"
+        android:textColor="@color/press_red_white_text"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+</LinearLayout>

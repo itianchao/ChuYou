@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.home.view.TraveExchangeActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="充豆"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:gravity="center"
+        android:id="@+id/recharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/fifteen"
+        android:layout_below="@+id/include"
+        android:id="@+id/relativeLayout25">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sss"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:id="@+id/titles"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_marginTop="@dimen/twenty"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/bean"
+            android:layout_below="@+id/titles"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty"
+        android:text="订单填写"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/twelve_ten"
+        android:id="@+id/textView102"
+        android:layout_below="@+id/relativeLayout25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:background="@color/white"
+        android:layout_below="@+id/textView102"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:id="@+id/textView66"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/fifteen"
+            android:singleLine="true"
+            android:textColorHighlight="@color/text_gray"
+
+            android:hint="必须与证件上的名字一致"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/thirteen_eleven"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView66"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout27"
+        android:layout_below="@+id/relativeLayout26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系手机："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:id="@+id/textView90"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/phoneNumber"
+            android:inputType="phone"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/fifteen"
+            android:singleLine="true"
+            android:textColorHighlight="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/thirteen_eleven"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView90"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/phoneNumber"
+            android:layout_alignEnd="@+id/phoneNumber" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginTop="@dimen/sixty"
+        android:text="确定兑换"
+        android:background="@drawable/press_button_bule_blue"
+        android:textColor="@color/white"
+        android:id="@+id/exchange"
+        android:layout_below="@+id/relativeLayout27"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

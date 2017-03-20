@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/press_white_gray_relative"
+        android:adjustViewBounds="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/head"
+            android:id="@+id/imageView" />
+        <ImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/head"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/twenty_five"
+            android:singleLine="true"
+            android:text="是是是是是是是是是少时诵诗书sssssss"
+            android:id="@+id/title"
+            android:layout_alignTop="@+id/head"
+            android:layout_toRightOf="@+id/head"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱心豆"
+            android:textColor="@color/text_task"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/textView70"
+            android:layout_alignBottom="@+id/bean"
+            android:layout_toRightOf="@+id/bean"
+            android:layout_marginBottom="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_toEndOf="@+id/bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/eighteen_fifteen"
+            android:textColor="@color/text_love"
+            android:id="@+id/bean"
+            android:layout_alignBottom="@+id/head"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/state"
+            android:src="@drawable/status02"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

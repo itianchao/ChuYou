@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.me.view.AddDetailsActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/save"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:gravity="center"
+        android:id="@+id/save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/statusBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout30"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="收货人："
+            android:id="@+id/textView59"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:id="@+id/name"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView59"
+            android:layout_toEndOf="@+id/textView59" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/relativeLayout30"
+        android:layout_alignRight="@+id/save"
+        android:layout_alignEnd="@+id/save"
+        android:id="@+id/relativeLayout31"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:id="@+id/phoneNumber"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView113"
+            android:layout_toEndOf="@+id/textView113" />
+
+        <TextView
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号码："
+            android:id="@+id/textView113"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/relativeLayout31"
+        android:layout_alignRight="@+id/save"
+        android:layout_alignEnd="@+id/save"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:id="@+id/address"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView116"
+            android:layout_toEndOf="@+id/textView116" />
+
+        <TextView
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="详细地址："
+            android:id="@+id/textView116"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

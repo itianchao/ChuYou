@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.circle.view.ReleaseActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:hint="@string/The_title_will_be"
+                android:textColorHint="@color/text_gray_one"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/fourteen_twelve"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@drawable/kuang_rightangle_white"/>
+            <EditText
+                android:id="@+id/ContentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_hundred_and_twenty_five"
+                android:gravity="left|top"
+                android:textColorHint="@color/text_gray_one"
+                android:hint="@string/The_body_of_the_mandatory"
+                android:padding="@dimen/fifteen_thirteen_dip"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/twelve_ten"
+                android:background="@drawable/kuang_rightangle_white"/>
+
+            <com.jueda.ndian.view.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/ten"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="@dimen/ten"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:background="@color/white"
+                android:verticalSpacing="@dimen/ten"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/send"
+        android:gravity="center"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/press_white_gray_text"
+        android:paddingRight="@dimen/fifteen_thirteen_dip"
+        android:paddingLeft="@dimen/fifteen_thirteen_dip"
+        android:id="@+id/sendTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

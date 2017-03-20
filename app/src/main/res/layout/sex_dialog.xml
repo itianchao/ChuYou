@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/cancelRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="@android:color/black" >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/two_hundred_and_fifty"
+        android:layout_height="@dimen/one_hundred_and_twenty_five"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kuang_corners_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textSize="@dimen/eighteen_fifteen"
+            android:id="@+id/textView24"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView21"
+            android:layout_below="@+id/textView24"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView21"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/man"
+                android:drawableRight="@drawable/sex_selector"
+                android:textColor="@color/select_red_white_color"
+                android:textSize="@dimen/eighteen_fifteen"
+                android:paddingRight="@dimen/forty"
+                android:paddingLeft="@dimen/forty"
+                android:button="@null"
+                android:id="@+id/man" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/forty"
+                android:paddingLeft="@dimen/forty"
+                android:textSize="@dimen/eighteen_fifteen"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/woman"
+                android:textColor="@color/select_red_white_color"
+                android:drawableRight="@drawable/sex_selector"
+                android:button="@null"
+                android:id="@+id/woman" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

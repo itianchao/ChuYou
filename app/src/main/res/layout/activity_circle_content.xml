@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.circle.view.CircleContentActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/concealRelativeLayout"
+        android:visibility="gone"
+        >
+
+    <com.jueda.ndian.view.MyRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshListView"
+        android:divider="@null"
+        android:layout_marginTop="@dimen/fifty">
+
+    </com.jueda.ndian.view.MyRefreshListView>
+
+
+    <Button
+        android:layout_width="@dimen/sixty"
+        android:layout_height="@dimen/sixty"
+        android:id="@+id/newConstruction"
+        android:background="@drawable/press_image_newimage"
+        android:text="发话题"
+        android:gravity="center"
+        android:textSize="@dimen/thirteen_eleven"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/refreshListView"
+        android:layout_marginBottom="@dimen/fifteen"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圈子还没有话题，赶紧发一个吧"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:id="@+id/newTextView"
+            android:visibility="gone"
+            android:layout_above="@+id/newConstruction"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/loadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_item"
+        android:layout_below="@+id/include"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/include" />
+</RelativeLayout>

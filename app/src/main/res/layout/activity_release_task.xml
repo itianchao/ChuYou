@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.home.view.TaskReleaseActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/send"
+        android:gravity="center"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:id="@+id/send_task"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.jueda.ndian.view.IndexViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout10">
+
+    </com.jueda.ndian.view.IndexViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务类型"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:id="@+id/textView15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RadioGroup
+            android:layout_width="200dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/six"
+            android:layout_marginBottom="@dimen/six"
+            android:orientation="horizontal"
+            android:padding="0.5dp"
+            android:id="@+id/radioGroup1"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15">
+            <RadioButton
+                android:layout_width="@dimen/fifty"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:text="@string/activity"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/select_white_gray_color"
+                android:background="@drawable/select_button_blue_gray"
+                android:checked="true"
+                android:id="@+id/radioButton1" />
+
+            <RadioButton
+                android:layout_width="@dimen/fifty"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:text="@string/questionnaire"
+                android:button="@null"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/select_white_gray_color"
+                android:background="@drawable/select_button_blue_gray"
+                android:gravity="center"
+                android:id="@+id/radioButton2" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_myinfo_changebirth"
+    android:layout_width="match_parent"
+    android:layout_height="160dip"
+    android:background="#f5f5f5"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <wheel.widget.views.WheelView
+        android:id="@+id/wv_birth_year"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+    <wheel.widget.views.WheelView
+        android:id="@+id/wv_birth_month"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+    <wheel.widget.views.WheelView
+        android:id="@+id/wv_birth_day"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+</LinearLayout>

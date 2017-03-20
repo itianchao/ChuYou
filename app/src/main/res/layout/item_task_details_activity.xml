@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downrelativeLayout"
+        android:background="@drawable/press_white_gray_relative"
+        android:adjustViewBounds="true">
+
+        <ImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/head"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:singleLine="true"
+            android:text="是是是是是是是是是少时诵诗书"
+            android:id="@+id/title"
+            android:layout_alignTop="@+id/head"
+            android:layout_toRightOf="@+id/head"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱心豆"
+            android:textColor="@color/text_task"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/textView70"
+            android:layout_alignBottom="@+id/bean"
+            android:layout_toRightOf="@+id/bean"
+            android:layout_marginBottom="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_toEndOf="@+id/bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/eighteen_fifteen"
+            android:textColor="@color/text_love"
+            android:id="@+id/bean"
+            android:layout_alignBottom="@+id/head"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title" />
+
+        <Button
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/twenty_five"
+            android:text="参加活动"
+            android:layout_marginRight="@dimen/fifteen"
+            android:textSize="@dimen/thirteen_eleven"
+            android:background="@drawable/press_button_blue_white"
+            android:textColor="@color/press_blue_white_color"
+            android:id="@+id/participate_activity"
+            android:layout_alignBottom="@+id/bean"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignEnd="@+id/title" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingTop="@dimen/fifteen"
+        android:paddingBottom="@dimen/ten"
+        android:id="@+id/textView36"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/downrelativeLayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务说明"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_marginLeft="@dimen/six"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView120"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="2dip"
+            android:layout_marginTop="@dimen/one"
+            android:layout_height="@dimen/twelve_ten"
+            android:id="@+id/textView121"
+            android:background="@color/text_off_per"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:background="@color/white"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:id="@+id/content"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/fifteen"
+        android:id="@+id/relativeLayout36"
+        android:layout_below="@+id/content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动描述"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_marginLeft="@dimen/six"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView1201"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="2dip"
+            android:layout_height="@dimen/twelve_ten"
+            android:id="@+id/textView1211"
+            android:layout_marginTop="@dimen/one"
+            android:background="@color/text_off_per"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="描述"
+        android:background="@color/white"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:id="@+id/details"
+        android:layout_below="@+id/relativeLayout36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:layout_below="@+id/details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_two"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:layout_marginTop="@dimen/ten"
+        android:id="@+id/apply1"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout">
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@drawable/xian_black"/>
+        <TextView
+            android:id="@+id/commentNumberTextView"
+            android:layout_width="match_parent"
+            android:gravity="center|left"
+            android:text="已报名"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:paddingLeft="@dimen/six"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

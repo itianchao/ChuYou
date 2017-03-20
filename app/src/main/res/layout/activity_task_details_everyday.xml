@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.home.view.TaskDetailsEverydayActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_hundred"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/press_white_gray_relative"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/fifteen"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:id="@+id/head"
+            android:src="@drawable/guanfang"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_toRightOf="@+id/state"
+            android:layout_toEndOf="@+id/state">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:text="在绝搭出游app上进行 签到+点赞+发话题+评论"
+            android:id="@+id/titles"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/head"
+            android:layout_toEndOf="@+id/head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱心豆"
+            android:textColor="@color/text_task"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/textView70"
+            android:layout_alignBottom="@+id/bean"
+            android:layout_toRightOf="@+id/bean"
+            android:layout_marginBottom="@dimen/four"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_toEndOf="@+id/bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textSize="@dimen/eighteen_fifteen"
+            android:textColor="@color/text_love"
+            android:id="@+id/bean"
+            android:layout_alignLeft="@+id/titles"
+            android:layout_alignStart="@+id/titles"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/fifteen"
+        android:layout_marginTop="@dimen/ten"
+        android:id="@+id/relativeLayout36"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务说明"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView120"
+            android:layout_marginLeft="@dimen/six"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="2dip"
+            android:layout_height="@dimen/twelve_ten"
+            android:id="@+id/textView121"
+            android:layout_marginTop="@dimen/one"
+            android:background="@color/text_off_per"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.签到 +2 爱心豆，每天奖励上限1次\n2.点赞 +3 爱心豆，每天奖励上限6个\n3.发话题 +5爱心豆，每天奖励上限2篇\n4.评论 +3爱心豆，每天奖励上限3次\n5.上传头像 +3爱心豆\n【任务总奖励 42爱心豆】
+"
+        android:id="@+id/content"
+        android:background="@color/white"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:layout_below="@+id/relativeLayout36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

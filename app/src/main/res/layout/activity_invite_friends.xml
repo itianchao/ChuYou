@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.me.view.InviteFriendsActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="303"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/thirty_twenty_six"
+        android:id="@+id/code"
+        android:layout_above="@+id/textView89"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的邀请码"
+        android:layout_marginTop="@dimen/fifteen"
+        android:layout_marginBottom="@dimen/thirty"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/text_gray_two"
+        android:id="@+id/textView89"
+        android:layout_above="@+id/invitation"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingTop="@dimen/eight"
+        android:paddingBottom="@dimen/eight"
+        android:gravity="center"
+        android:text="立即邀请"
+        android:id="@+id/invitation"
+        android:textColor="@color/press_orange_white_text"
+        android:background="@drawable/press_button_white_orange_orange_white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/one_hundred_and_thirty"
+        android:layout_height="@dimen/one_hundred_and_thirty"
+        android:id="@+id/imageView81"
+        android:background="@drawable/max_card"
+        android:layout_above="@+id/textView91"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【让朋友扫一扫，下载绝搭出游】"
+        android:textSize="@dimen/eleven_nine"
+        android:layout_marginTop="@dimen/ten"
+        android:textColor="@color/text_black"
+        android:id="@+id/textView91"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+</RelativeLayout>

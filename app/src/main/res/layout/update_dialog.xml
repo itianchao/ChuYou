@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cancelRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="@android:color/black" >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/two_hundred_and_fifty"
+        android:layout_height="@dimen/three_hundred"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kuang_corners_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:text="@string/A_new_release"
+
+            android:textSize="@dimen/eighteen_fifteen"
+            android:id="@+id/content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView21"
+            android:layout_below="@+id/content"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="立即更新"
+                android:gravity="center"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/fifteen_thirteen"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/xian_gray"/>
+            <TextView
+                android:id="@+id/no_update"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="暂不更新"
+                android:gravity="center"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/fifteen_thirteen"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新版本"
+            android:id="@+id/new_Version"
+            android:layout_marginTop="@dimen/fifteen"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:layout_below="@+id/imageView21"
+            android:layout_alignLeft="@+id/imageView21"
+            android:layout_alignStart="@+id/imageView21"
+            android:layout_alignRight="@+id/imageView21"
+            android:layout_alignEnd="@+id/imageView21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用大小"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:id="@+id/APP_Size"
+            android:layout_below="@+id/new_Version"
+            android:layout_alignLeft="@+id/new_Version"
+            android:layout_alignStart="@+id/new_Version"
+            android:layout_alignRight="@+id/new_Version"
+            android:layout_alignEnd="@+id/new_Version" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Update_log"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView31"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_below="@+id/APP_Size"
+            android:layout_alignLeft="@+id/APP_Size"
+            android:layout_alignStart="@+id/APP_Size"
+            android:layout_alignRight="@+id/APP_Size"
+            android:layout_alignEnd="@+id/APP_Size" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView31"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignRight="@+id/imageView21"
+            android:layout_alignEnd="@+id/imageView21"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/thirteen_eleven"
+                android:textColor="@color/text_black"
+                android:id="@+id/Content"
+                />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView59"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

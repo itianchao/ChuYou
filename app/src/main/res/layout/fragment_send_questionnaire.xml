@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:id="@+id/bean"
+            android:hint="请输入完成一个任务的佣金"
+            android:textColorHint="@color/text_gray"
+            android:layout_below="@+id/textView28"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/textView32"
+            android:layout_toStartOf="@+id/textView32"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingLeft="@dimen/fifteen"
+            android:inputType="number"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:text="爱心豆/人"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/thirteen_eleven"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/fifteen"
+            android:id="@+id/textView32"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/bean"
+            android:layout_alignTop="@+id/bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:text="个"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/thirteen_eleven"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/fifteen"
+            android:id="@+id/textView88"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/number"
+            android:layout_alignBottom="@+id/number" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:id="@+id/number"
+            android:hint="请输入任务数量"
+            android:textColorHint="@color/text_gray"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingLeft="@dimen/fifteen"
+            android:inputType="number"
+            android:background="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView122"
+            android:layout_toLeftOf="@+id/textView88"
+            android:layout_toStartOf="@+id/textView88" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/thirty"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:text="任务数量"
+            android:id="@+id/textView122"
+            android:layout_below="@+id/bean"
+            android:layout_alignLeft="@+id/textView83"
+            android:layout_alignStart="@+id/textView83" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="任务标题"
+            android:id="@+id/textView83"
+            android:layout_height="@dimen/thirty"
+            android:textSize="@dimen/twelve_ten"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textColor="@color/text_black"
+            android:layout_below="@+id/number"
+            android:layout_alignLeft="@+id/textView28"
+            android:layout_alignStart="@+id/textView28" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:id="@+id/title"
+            android:hint="请输入任务标题"
+            android:textColorHint="@color/text_gray"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingLeft="@dimen/fifteen"
+            android:background="@color/white"
+            android:layout_below="@+id/textView83"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="任务说明"
+            android:id="@+id/textView33"
+            android:layout_height="@dimen/thirty"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/textView83"
+            android:layout_alignStart="@+id/textView83" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_hundred_and_fifty"
+            android:id="@+id/rule"
+            android:gravity="top|left"
+            android:hint="请输入任务说明"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingBottom="@dimen/ten"
+            android:paddingTop="@dimen/ten"
+            android:paddingLeft="@dimen/fifteen"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColorHint="@color/text_gray"
+            android:background="@color/white"
+            android:layout_below="@+id/textView33"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="问卷链接"
+            android:layout_height="@dimen/thirty"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView34"
+            android:layout_below="@+id/rule"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:id="@+id/link"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingBottom="@dimen/ten"
+            android:paddingTop="@dimen/ten"
+            android:paddingLeft="@dimen/fifteen"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColorHint="@color/text_gray"
+            android:background="@color/white"
+            android:hint="请输入问卷链接"
+            android:layout_below="@+id/textView34"
+            android:layout_alignRight="@+id/textView32"
+            android:layout_alignEnd="@+id/textView32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="任务完成示例截图"
+            android:layout_height="@dimen/thirty"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView35"
+            android:layout_below="@+id/link"
+            android:layout_alignLeft="@+id/textView34"
+            android:layout_alignStart="@+id/textView34" />
+
+        <com.jueda.ndian.view.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/ten"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="@dimen/ten"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:background="@color/white"
+            android:verticalSpacing="@dimen/ten"
+            android:layout_below="@+id/textView35"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" >
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/thirty"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:textColor="@color/text_black"
+            android:text="任务佣金"
+            android:id="@+id/textView28"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

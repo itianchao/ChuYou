@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/commentsLinearLayout"
+    android:background="@drawable/press_white_gray_relative">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_five"
+        android:background="@drawable/press_white_gray_relative"
+        >
+        <com.jueda.ndian.view.CircleImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:src="@drawable/head_portrait"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/headImageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="@dimen/two_hundred"
+            android:text="冯冯"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#377CE4"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/thirteen_eleven"
+            android:id="@+id/NickNameTextView"
+            android:layout_toRightOf="@+id/headImageView"
+            android:layout_toEndOf="@+id/headImageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/fifteen"
+            android:textColor="@color/text_gray_one"
+            android:textSize="@dimen/twelve_ten"
+            android:text="1小时前"
+            android:id="@+id/timeTextView"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/NickNameTextView"
+            android:layout_alignTop="@+id/NickNameTextView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/six"
+            android:id="@+id/imageView50"
+            android:src="@drawable/time"
+            android:layout_toLeftOf="@+id/timeTextView"
+            android:layout_toStartOf="@+id/timeTextView"
+            android:layout_alignTop="@+id/timeTextView"
+            android:layout_alignBottom="@+id/timeTextView" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:id="@+id/contentTextView"
+        android:text=""
+        android:textSize="@dimen/thirteen_eleven"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fifteen"
+            android:src="@drawable/press_image_comment"
+            android:id="@+id/imageView53"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"/>
+</LinearLayout>

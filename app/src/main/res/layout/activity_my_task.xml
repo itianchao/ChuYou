@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.fragment.MyAuditFragment">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:orientation="horizontal"
+            android:padding="0.5dp"
+            android:id="@+id/radioGroup1"
+            android:background="@color/white"
+            android:layout_below="@+id/include"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/In_the_review"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/select_blue_gray_color"
+                android:checked="true"
+                android:id="@+id/radioButton1" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/approved"
+                android:button="@null"
+                android:singleLine="true"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/select_blue_gray_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/radioButton2" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/Audit_did_not_pass"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/select_blue_gray_color"
+                android:id="@+id/radioButton3" />
+        </RadioGroup>
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="@dimen/eighty"
+        android:layout_height="@dimen/two"
+        android:background="@drawable/xian_title"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/select">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/select">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/ten"
+                android:layout_height="@dimen/ten"
+                android:id="@+id/auditImageView"
+                android:background="@drawable/press_message"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_marginTop="@dimen/eight"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/ten"
+                android:layout_height="@dimen/ten"
+                android:id="@+id/completeImageView"
+                android:background="@drawable/press_message"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/twenty"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/eight" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/ten"
+                android:layout_height="@dimen/ten"
+                android:id="@+id/unfinishedImageView"
+                android:background="@drawable/press_message"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/twenty"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/eight" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.me.view.LoginActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/RelativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:layout_marginTop="@dimen/twenty"
+
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/phone"
+            android:gravity="center"
+            android:paddingRight="@dimen/fifteen_thirteen_dip"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/userName"
+            android:inputType="phone"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:singleLine="true"
+            android:paddingRight="@dimen/ten"
+            android:hint="@string/please_enter_the_phone_number"
+            android:textColorHint="@color/text_gray"
+            android:background="@null"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/thirteen_eleven"
+        android:textColor="@color/press_gray_gray_text"
+        android:paddingTop="@dimen/six"
+        android:paddingBottom="@dimen/six"
+        android:gravity="center"
+        android:id="@+id/findPassWord"
+        android:layout_above="@+id/login"
+        android:layout_alignRight="@+id/imageView16"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_alignTop="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_alignLeft="@+id/RelativeLayout1"
+        android:layout_alignStart="@+id/RelativeLayout1"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_toStartOf="@+id/findPassWord"
+        android:layout_toLeftOf="@+id/findPassWord">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/password"
+            android:paddingRight="@dimen/fifteen_thirteen_dip"
+            android:gravity="center"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/passWord"
+            android:layout_alignParentTop="true"
+            android:paddingRight="@dimen/ten"
+            android:layout_toRightOf="@+id/textView4"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColorHint="@color/text_gray"
+            android:background="@null"
+            android:hint="@string/please_enter_the_password1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/forty"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/twenty"
+        android:id="@+id/login"
+        android:textSize="@dimen/eighteen_fifteen"
+        android:background="@drawable/press_button_bule_blue"
+        android:textColor="@color/white"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/findPassWord"
+        android:layout_alignEnd="@+id/findPassWord" />
+    <Button
+        android:layout_width="@dimen/fifty"
+        android:layout_height="@dimen/forty"
+        android:background="@drawable/press_button_blue_white"
+        android:id="@+id/register"
+        android:layout_marginTop="@dimen/twenty"
+        android:text="@string/Mobile_phone_registered"
+        android:textSize="@dimen/eighteen_fifteen"
+        android:textColor="@color/press_blue_white_color"
+        android:layout_below="@+id/login"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignEnd="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView16"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_alignLeft="@+id/RelativeLayout1"
+        android:layout_alignStart="@+id/RelativeLayout1"
+        android:layout_alignRight="@+id/RelativeLayout1"
+        android:layout_alignEnd="@+id/RelativeLayout1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView17"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/findPassWord"
+        android:layout_alignEnd="@+id/findPassWord" />
+
+</RelativeLayout>

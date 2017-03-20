@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_five"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/press_white_gray_relative"
+        android:adjustViewBounds="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView66"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+             android:layout_width="@dimen/thirty_five"
+             android:layout_height="@dimen/thirty_five"
+             android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+             android:id="@+id/head"
+             >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/one_hundred_and_eighty"
+        android:text="标题"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="@dimen/ten"
+        android:singleLine="true"
+        android:id="@+id/NameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/head"
+        android:layout_toEndOf="@+id/head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交时间:"
+        android:id="@+id/timeTextView"
+        android:singleLine="true"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/eleven_nine"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_above="@+id/imageView66"
+        android:layout_alignLeft="@+id/NameTextView"
+        android:layout_alignStart="@+id/NameTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱心豆"
+        android:textSize="@dimen/fourteen_twelve"
+        android:textColor="@color/text_task"
+        android:layout_marginRight="@dimen/fifteen"
+        android:id="@+id/textView70"
+        android:layout_alignTop="@+id/rewardTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="@dimen/fourteen_twelve"
+        android:layout_marginRight="@dimen/two"
+        android:textColor="@color/text_love"
+        android:id="@+id/rewardTextView"
+        android:layout_alignTop="@+id/NameTextView"
+        android:layout_toLeftOf="@+id/textView70"
+        android:layout_toStartOf="@+id/textView70" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来至:"
+
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_gray"
+            android:id="@+id/formTextView"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/head"
+            android:layout_toEndOf="@+id/head" />
+    </RelativeLayout>
+</RelativeLayout>

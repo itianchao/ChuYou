@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="personal_top_image_top">60dip</dimen>
+    <dimen name="personal_top_text_top">10dip</dimen>
+    <dimen name="register_top">70dip</dimen>
+    <dimen name="register_have">40dip</dimen>
+    <dimen name="register_sixty">60dip</dimen>
+    <dimen name="register_user_edittext">80dip</dimen>
+    <dimen name="register_user_button">50dip</dimen>
+    <dimen name="downloader_topimage">100dip</dimen>
+    <dimen name="downloader_top_padtop">10dip</dimen>
+    <dimen name="downloader_fifteen">15dip</dimen>
+    <dimen name="downloader_titlesize">18sp</dimen>
+    <dimen name="downloader_paddleft">50dip</dimen>
+    <dimen name="about_top">10dip</dimen>
+    <dimen name="about_toptext">80dip</dimen>
+    <dimen name="ten_eight">10sp</dimen>
+    <dimen name="twelve_ten">12sp</dimen>
+    <dimen name="fifteen_thirteen">15sp</dimen>
+    <dimen name="fifteen_thirteen_dip">15dip</dimen>
+    <dimen name="eleven_nine">11sp</dimen>
+    <dimen name="thirteen_eleven">13sp</dimen>
+    <dimen name="fourteen_twelve">14sp</dimen>
+    <dimen name="sixteen_fourteen">16sp</dimen>
+    <dimen name="eighteen_fifteen">18sp</dimen>
+    <dimen name="twenty_eighteen">20sp</dimen>
+    <dimen name="thirty_twenty_six">30sp</dimen>
+    <dimen name="twenty_thirty_dip">20dip</dimen>
+    <dimen name="thirty_twenty_dip">30dip</dimen>
+    <dimen name="forty_thirty_dip">40dip</dimen>
+    <dimen name="seventy_forty_five">70dip</dimen>
+    <dimen name="One_hundred_serventy_five">100dip</dimen>
+    <dimen name="ninety_sixty_five">90dip</dimen>
+    <dimen name="One_hundred_and_fifty_Two_hundred">200dip</dimen>
+    <dimen name="One_hundred_and_sixty_Two_hundred">160dip</dimen>
+    <dimen name="one_hundred_and_fifty_one_hundred_and_twn">150dip</dimen>
+    <dimen name="one_hundred_and_eighty_five">210dip</dimen>
+    <dimen name="list_height">45dip</dimen>
+
+</resources>

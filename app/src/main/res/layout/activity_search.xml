@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.circle.view.SearchActivity">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/title"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:layout_width="@dimen/fifty"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/press_image_back"
+            android:paddingRight="@dimen/twenty"
+            android:id="@+id/back"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/fifty"
+            android:background="@drawable/kuang_corners_white"
+            android:layout_marginTop="@dimen/six"
+            android:layout_marginBottom="@dimen/six"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toStartOf="@+id/search">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:src="@drawable/search"
+                android:id="@+id/imageView12" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/searchEditText"
+                android:background="@null"
+                android:hint="@string/Please_provide_a_circle_name"
+                android:textColorHint="@color/text_gray_one"
+                android:singleLine="true"
+                android:paddingRight="@dimen/ten"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/thirteen_eleven"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView12"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:gravity="center"
+            android:id="@+id/search"
+            android:textColor="@color/press_white_gray_text"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <com.jueda.ndian.view.MyRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshListView"
+        app:isRefresh="false"
+        android:divider="@null"
+        android:layout_below="@+id/linearLayout3" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/no_search"
+        android:id="@+id/no_search"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentBottom="true" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout3" />
+</RelativeLayout>

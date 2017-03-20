@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ninety"
+        android:background="@drawable/press_white_gray_relative"
+        >
+        <ImageView android:layout_width="@dimen/one_hundred_and_twenty_five"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_marginTop="@dimen/ten"
+            android:maxLines="2"
+            android:text="是是是"
+            android:textSize="@dimen/fourteen_twelve"
+            android:textColor="@color/text_black"
+            android:layout_toRightOf="@+id/imageView"
+            android:paddingRight="@dimen/fifteen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray_two"
+            android:singleLine="true"
+            android:text="ss搜索"
+            android:layout_marginBottom="@dimen/ten"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_marginRight="@dimen/fifteen"
+            android:id="@+id/bean"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/bean"
+            android:layout_toEndOf="@+id/bean"
+            android:layout_alignTop="@+id/bean"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_alignBottom="@+id/bean">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twelve_ten"
+                android:textColor="@color/text_gray"
+                android:gravity="center_vertical"
+                android:id="@+id/money"
+                android:text="ss搜索"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/one"
+                android:paddingRight="@dimen/two"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:id="@+id/imageView94"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xian_gray_one"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/money"
+                android:layout_alignEnd="@+id/money" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+</LinearLayout>

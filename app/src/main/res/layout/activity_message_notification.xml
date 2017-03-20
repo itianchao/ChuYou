@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.me.view.MessageNotificationActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:layout_height="@dimen/list_height"
+        android:background="@drawable/press_white_gray_relative">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:gravity="center"
+            android:text="@string/voice"/>
+
+        <com.jueda.ndian.view.SwitchButton
+            android:id="@+id/voice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:isOpened="true"
+            slide_button="@drawable/botiao"
+            switch_background_true="@drawable/on_on"
+            app:switch_background_false="@drawable/on_off"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:layout_height="@dimen/list_height"
+        android:background="@drawable/press_white_gray_relative">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:gravity="center"
+            android:text="@string/vibration"/>
+
+        <com.jueda.ndian.view.SwitchButton
+            android:id="@+id/vibration_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:isOpened="true"
+            slide_button="@drawable/botiao"
+            switch_background_true="@drawable/on_on"
+            app:switch_background_false="@drawable/on_off"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:layout_height="@dimen/list_height"
+        android:background="@drawable/press_white_gray_relative">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:gravity="center"
+            android:text="@string/Comment_to_remind"/>
+
+        <com.jueda.ndian.view.SwitchButton
+            android:id="@+id/remind_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:isOpened="true"
+            slide_button="@drawable/botiao"
+            switch_background_true="@drawable/on_on"
+            app:switch_background_false="@drawable/on_off"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

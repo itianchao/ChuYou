@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.home.view.TaskExchangeDetailsSubmitActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="充豆"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:gravity="center"
+        android:id="@+id/recharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/include"
+        android:id="@+id/relativeLayout25">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ssss"
+            android:id="@+id/titles"
+            android:layout_marginTop="@dimen/fifteen"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/bean"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:layout_below="@+id/titles"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty"
+        android:text="收货地址"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:textSize="@dimen/twelve_ten"
+        android:textColor="@color/text_black"
+        android:id="@+id/textView43"
+        android:layout_below="@+id/relativeLayout25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:text="编辑收货地址"
+        android:id="@+id/go_edit"
+        android:layout_below="@+id/textView43"
+        android:gravity="center_vertical"
+
+        android:paddingLeft="@dimen/fifteen"
+        android:background="@drawable/press_white_gray_relative"
+        android:textSize="@dimen/twelve_ten"
+        android:textColor="@color/text_black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:id="@+id/imageView999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fifteen"
+        android:src="@drawable/index_fenlei3x"
+        android:layout_alignRight="@+id/recharge"
+        android:layout_alignEnd="@+id/recharge"
+        android:layout_below="@+id/textView43"
+        android:layout_alignBottom="@+id/go_edit" />
+
+    <RelativeLayout
+        android:id="@+id/go_edit_relativeLatout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_below="@+id/go_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="@dimen/fifteen"
+            android:maxWidth="@dimen/one_hundred"
+            android:text="New Text"
+            android:id="@+id/name"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignStart="@+id/address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:singleLine="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_marginRight="@dimen/thirty"
+            android:id="@+id/phoneNumber"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_toLeftOf="@+id/imageView99"
+            android:layout_toStartOf="@+id/imageView99" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/thirty"
+            android:layout_marginLeft="@dimen/eight"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:text="New Text"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:id="@+id/address"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/imageView101"
+            android:layout_toEndOf="@+id/imageView101" />
+
+        <ImageView
+            android:id="@+id/imageView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:src="@drawable/index_fenlei3x" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView101"
+            android:src="@drawable/location"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/address"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen"
+        android:textSize="@dimen/fifteen"
+        android:text="确定兑换"
+        android:textColor="@color/white"
+        android:background="@drawable/press_button_bule_blue"
+        android:id="@+id/exchange"
+        android:layout_below="@+id/go_edit_relativeLatout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixty" />
+</RelativeLayout>

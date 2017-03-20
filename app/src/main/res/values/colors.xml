@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title">#30b0f0</color><!--#eb574d-->
+    <color name="drawable_red">#de3131</color>
+    <color name="black">#000000</color>
+    <color name="brigh_blue">#165CBC</color><!-- 亮蓝 -->
+    <color name="kuang_gray">#dedede</color><!-- 框灰-->
+    <color name="ordinary">#4d4d4d</color>
+    <color name="white">#ffffff</color><!--白-->
+    <color name="background">#f5f2f2</color>
+    <color name="background_shrink">#E3E3E3</color><!--后台查看时标题栏颜色-->
+    <color name="gray">#dedede</color><!--三级灰级  -->
+    <color name="xian_gray">#dedede</color><!--线灰 -->
+    
+    <color name="button_orange">#FF9C59</color>
+    <color name="button_red">#eb574d</color><!--按钮红-->
+    <color name="button_blue">#30b0f0</color>
+    <color name="button_gray">#BABABA</color>
+    
+    <color name="text_off_per">#FF6600</color><!--官方或个人-->
+    <color name="text_blue_one">#377CE4</color><!--用户名颜色-->
+    <color name="text_gray">#BABABA</color><!-- 字体灰-->
+    <color name="text_gray_one">#BABABA</color>
+    <color name="text_gray_two">#666666</color>
+    <color name="text_red">#eb574d</color><!-- 字体红-->
+    <color name="text_home_help">#FF9C59</color>
+    <color name="text_orange">#EB574D</color>
+    <color name="text_love">#FF9C59</color><!--爱心豆颜色-->
+    <color name="text_blue">#30b0f0</color><!--字体蓝 -->
+    <color name="text_add">#12B5B0</color><!--加圈审核  -->
+    <color name="text_move">#E50553</color><!--移除-->
+    <color name="text_donation">#F39801</color><!--捐赠审核  -->
+    <color name="text_gray_press">#e5e5e5</color><!--字体半透明按压颜色-->
+    <color name="text_black">#363636</color><!-- 字体黑-->
+    <color name="text_gonggao">#666666</color>
+    <color name="text_task">#666666</color>
+</resources>

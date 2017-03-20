@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.home.view.TaskDetailsQuestionnaireActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <include
+        android:id="@+id/loadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_item"
+        android:layout_below="@+id/include"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/delect"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:id="@+id/deleteTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_below="@+id/include">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/downrelativeLayout"
+                android:background="@drawable/press_white_gray_relative"
+                android:adjustViewBounds="true">
+
+                <ImageView
+                    android:layout_width="@dimen/forty_five"
+                    android:layout_height="@dimen/forty_five"
+                    android:layout_margin="@dimen/fifteen"
+                    android:id="@+id/head"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:paddingRight="@dimen/fifteen"
+                    android:singleLine="true"
+                    android:text="是是是是是是是是是少时诵诗书"
+                    android:id="@+id/titles"
+                    android:layout_alignTop="@+id/head"
+                    android:layout_toRightOf="@+id/head"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱心豆"
+                    android:textColor="@color/text_task"
+                    android:textSize="@dimen/twelve_ten"
+                    android:id="@+id/textView70"
+                    android:layout_alignBottom="@+id/bean"
+                    android:layout_toRightOf="@+id/bean"
+                    android:layout_marginBottom="@dimen/four"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_toEndOf="@+id/bean" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="@dimen/eighteen_fifteen"
+                    android:textColor="@color/text_love"
+                    android:id="@+id/bean"
+                    android:layout_alignBottom="@+id/head"
+                    android:layout_alignLeft="@+id/titles"
+                    android:layout_alignStart="@+id/titles" />
+
+                <Button
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_five"
+                    android:text="分享问卷"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:background="@drawable/press_button_blue_white"
+                    android:textColor="@color/press_blue_white_color"
+                    android:id="@+id/share"
+                    android:layout_alignBottom="@+id/bean"
+                    android:layout_alignRight="@+id/titles"
+                    android:layout_alignEnd="@+id/titles" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:paddingRight="@dimen/fifteen"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingTop="@dimen/fifteen"
+                android:paddingBottom="@dimen/ten"
+                android:id="@+id/textView36"
+                android:layout_below="@+id/downrelativeLayout" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务说明"
+                    android:layout_marginLeft="@dimen/six"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/textView120"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="@dimen/twelve_ten"
+                    android:layout_marginTop="@dimen/one"
+                    android:id="@+id/textView121"
+                    android:background="@color/text_off_per"
+                    android:layout_alignParentTop="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:background="@color/white"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:paddingBottom="@dimen/fifteen"
+                android:textColor="@color/text_black"
+                android:paddingRight="@dimen/fifteen"
+                android:paddingLeft="@dimen/fifteen"
+                android:id="@+id/content"
+                android:layout_below="@+id/textView36"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/fifteen"
+                android:layout_marginTop="@dimen/ten"
+                android:id="@+id/relativeLayout36"
+                android:layout_below="@+id/content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交截图"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/textView1201"
+                    android:layout_marginLeft="@dimen/six"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="@dimen/twelve_ten"
+                    android:layout_marginTop="@dimen/one"
+                    android:id="@+id/textView1211"
+                    android:background="@color/text_off_per"
+                    android:layout_alignParentTop="true"
+                    />
+            </RelativeLayout>
+            <com.jueda.ndian.view.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="@dimen/ten"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:background="@color/white"
+                android:verticalSpacing="@dimen/ten"
+                android:layout_below="@+id/relativeLayout36"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" >
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:text="提交截图"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:textColor="@color/white"
+                android:background="@drawable/press_button_bule_blue"
+                android:id="@+id/submit"
+                android:layout_marginTop="@dimen/sixty"
+                android:layout_below="@+id/gridview"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

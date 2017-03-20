@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/fifty_five"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/taskRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/fifteen"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/press_image_task"
+                android:id="@+id/imageView39"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/task"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_toStartOf="@+id/task" />
+            <TextView
+                android:id="@+id/task"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="@string/Ring_main_task"
+                android:textColor="@color/press_black_gray_circle"
+                android:textSize="@dimen/twelve_ten"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/textView84"
+                android:layout_alignStart="@+id/textView84" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView84"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/xian_gray"/>
+
+
+        <RelativeLayout
+            android:id="@+id/chatRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/fifteen"
+            android:background="@color/white"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/press_image_chat"
+                android:id="@+id/imageView60"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_toLeftOf="@+id/textView844"
+                android:layout_toStartOf="@+id/textView844" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView844"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="@string/chat"
+                android:textColor="@color/press_black_gray_circle"
+                android:textSize="@dimen/twelve_ten"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/textView844"
+                android:layout_alignStart="@+id/textView844" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ten"
+        android:background="@color/background"/>
+
+</LinearLayout>

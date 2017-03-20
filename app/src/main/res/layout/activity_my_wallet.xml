@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.me.view.MyWalletActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/MoneyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#FF9C59"
+            android:textSize="@dimen/thirty_twenty_six"
+            android:gravity="center|bottom"
+            android:paddingBottom="@dimen/ten"
+            android:paddingTop="@dimen/fifteen"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fifteen"
+            android:layout_weight="1"
+            android:textColor="@color/text_gray_two"
+            android:textSize="@dimen/twenty_eighteen"
+            android:text="@string/dedication"
+            android:paddingTop="@dimen/ten"
+            android:gravity="center|top"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:text="@string/top_up"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/press_white_red_text"
+        android:background="@drawable/press_button_red_red"
+        android:id="@+id/top_up"
+        android:layout_marginTop="@dimen/seventy_five"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fifteen"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:text="@string/withdrawal"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/press_white_red_text"
+        android:background="@drawable/press_button_orange_orange"
+        android:id="@+id/Withdrawal"
+        android:layout_marginTop="@dimen/fifteen"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

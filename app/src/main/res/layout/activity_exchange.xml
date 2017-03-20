@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.ExchangeActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/include"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额："
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:id="@+id/textView14"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0爱心豆"
+            android:gravity="left|center_vertical"
+            android:paddingRight="@dimen/fifteen"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_love"
+            android:id="@+id/love_bean"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thirty"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/fifteen"
+        android:textSize="@dimen/twelve_ten"
+        android:textColor="@color/text_black"
+        android:text="@string/Change_the_amount"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@color/white"
+        android:id="@+id/textView76"
+        android:layout_below="@+id/relativeLayout16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/textView76"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView29" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five"
+        android:background="@color/white"
+        android:layout_below="@+id/imageView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10元"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView77"
+            android:paddingLeft="@dimen/fifteen"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginRight="@dimen/fifteen"
+            android:text="100爱心豆"
+            android:paddingRight="@dimen/ten"
+            android:paddingLeft="@dimen/ten"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:id="@+id/one_love"
+            android:textColor="@color/press_orange_white_text"
+            android:background="@drawable/press_button_white_orange_orange_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout18"
+        android:layout_below="@+id/relativeLayout17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50元"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView81"
+            android:paddingLeft="@dimen/fifteen"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginRight="@dimen/fifteen"
+            android:text="500爱心豆"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:paddingRight="@dimen/ten"
+            android:paddingLeft="@dimen/ten"
+            android:id="@+id/five_love"
+            android:textColor="@color/press_orange_white_text"
+            android:background="@drawable/press_button_white_orange_orange_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView40"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:id="@+id/textView82"
+            android:paddingLeft="@dimen/fifteen"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginRight="@dimen/fifteen"
+            android:text="1000爱心豆"
+            android:paddingRight="@dimen/ten"
+            android:paddingLeft="@dimen/ten"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:id="@+id/ten_love"
+            android:textColor="@color/press_orange_white_text"
+            android:background="@drawable/press_button_white_orange_orange_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView44"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

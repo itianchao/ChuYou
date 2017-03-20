@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cancelRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="@android:color/black" >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/two_hundred_and_fifty"
+        android:layout_height="@dimen/one_hundred_and_fifty"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kuang_corners_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:text="@string/submit_success"
+            android:textSize="@dimen/eighteen_fifteen"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/know"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/complete"
+                android:gravity="center"
+
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/fifteen_thirteen"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView59"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="资料提交成功，我们会在24小时内对您的资料进行审核"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:gravity="center|left"
+            android:lineSpacingExtra="1dp"
+            android:id="@+id/Content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/imageView59"
+            android:layout_below="@+id/title" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:clipToPadding="true"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:gravity="center"
+        android:textColor="@color/press_white_gray_text"
+        android:padding="@dimen/fifteen"
+        android:id="@+id/send"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thirty_two"
+        android:text="@string/Fill_in_the_feedback_package_will_have_the_opportunity_to_get_love"
+        android:id="@+id/textView16"
+        android:gravity="center|left"
+        android:textSize="@dimen/twelve_ten"
+        android:textColor="@color/text_black"
+        android:paddingLeft="@dimen/fifteen"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/send"
+        android:layout_alignEnd="@+id/send" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundred_and_fifty"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout14">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:background="@null"
+            android:padding="@dimen/fifteen"
+            android:gravity="top|left"
+            android:hint="@string/Please_input_your_feedback"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/image" />
+
+        <ImageView
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="@dimen/one_hundred"
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:src="@drawable/press_image_photo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/textView30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题截图"
+            android:layout_marginTop="@dimen/four"
+            android:id="@+id/textView30"
+            android:textSize="@dimen/eleven_nine"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/image"
+            android:layout_alignEnd="@+id/image"
+            android:layout_alignLeft="@+id/image"
+            android:layout_alignStart="@+id/image" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thirty_two"
+        android:text="@string/contact_information"
+        android:id="@+id/textView39"
+        android:gravity="center|left"
+        android:textSize="@dimen/twelve_ten"
+        android:textColor="@color/text_black"
+        android:paddingLeft="@dimen/fifteen"
+        android:layout_below="@+id/relativeLayout14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/send"
+        android:layout_alignEnd="@+id/send" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/contact"
+        android:hint="@string/phonenumber_email_qq"
+        android:textColorHint="@color/text_gray"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/fourteen_twelve"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:background="@color/white"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

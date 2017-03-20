@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/press_white_gray_relative"
+        android:padding="@dimen/fifteen"
+        >
+        <ImageView
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/seventy"
+            android:layout_marginRight="@dimen/fifteen"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_alignTop="@+id/imageView"
+            android:maxLines="2"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"
+            android:text="是是是\n是是是是是是是是是是是是是是"
+            android:layout_toRightOf="@+id/imageView"
+            android:paddingRight="@dimen/fifteen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray_two"
+            android:singleLine="true"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/bean"  android:text="ssss"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toLeftOf="@+id/relativeLayout32"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/money"
+            android:layout_alignBottom="@+id/money"
+            android:layout_alignTop="@+id/money"
+            android:layout_marginLeft="@dimen/ten"
+            android:id="@+id/relativeLayout32">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twelve_ten"
+                android:textColor="@color/text_gray"
+                android:gravity="center_vertical"
+                android:id="@+id/oldermoney"
+                android:text="ssss"
+
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/one"
+                android:paddingRight="@dimen/two"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:id="@+id/imageView94"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xian_gray_one"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/oldermoney"
+                android:layout_alignEnd="@+id/oldermoney" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_red"
+            android:layout_marginBottom="@dimen/two"
+            android:singleLine="true"
+            android:textSize="@dimen/fourteen_twelve"
+            android:text="ssss"
+            android:id="@+id/money"
+
+            android:layout_above="@+id/bean"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.home.view.TaskExperienceActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="提交截图"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:gravity="center"
+        android:id="@+id/submit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/statusBar" />
+    <include
+        android:id="@+id/loadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_item"
+        android:layout_below="@+id/include"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/include" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout3">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:id="@+id/titles"
+                    android:text="水水水水"
+                    android:textSize="@dimen/downloader_titlesize"
+                    android:textColor="@color/text_black"
+                    android:layout_below="@+id/imageView"
+                    android:layout_toRightOf="@+id/head"
+                    android:layout_toEndOf="@+id/head" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout11"
+                    android:layout_below="@+id/titles"
+                    android:layout_alignRight="@+id/titles"
+                    android:layout_marginTop="@dimen/four"
+                    android:layout_alignEnd="@+id/titles">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_five"
+                    android:gravity="center"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:textColor="@color/press_blue_white_color"
+                    android:text="@string/download"
+                    android:background="@drawable/press_button_blue_white"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+                <ProgressBar
+                    style="@style/ProgressBar_Downloader"
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_five"
+                    android:id="@+id/progressBar"
+                    android:visibility="gone"
+                    android:layout_below="@+id/title"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignLeft="@+id/button"
+                    android:layout_alignStart="@+id/button" />
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_five"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/baifenbi"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignLeft="@+id/button"
+                    android:layout_alignStart="@+id/button" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/head"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:src="@drawable/guanfang"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱心豆"
+                    android:textColor="@color/text_task"
+                    android:textSize="@dimen/twelve_ten"
+                    android:id="@+id/textView70"
+                    android:layout_alignBottom="@+id/NickNameTextView"
+                    android:layout_toRightOf="@+id/NickNameTextView"
+                    android:layout_marginBottom="@dimen/four"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_toEndOf="@+id/NickNameTextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_marginTop="@dimen/ten"
+                    android:textSize="@dimen/eighteen_fifteen"
+                    android:textColor="@color/text_love"
+                    android:id="@+id/NickNameTextView"
+                    android:layout_below="@+id/titles"
+                    android:layout_alignLeft="@+id/titles"
+                    android:layout_alignStart="@+id/titles" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout3"
+                android:id="@+id/relativeLayout35"
+                android:background="@color/white"
+                android:padding="@dimen/fifteen"
+                android:layout_marginTop="@dimen/ten">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rule"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:background="@color/white"
+                    android:layout_below="@+id/textView78"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:scrollbars="@null"
+                    android:background="@color/white"
+                    android:layout_below="@+id/textView782"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                <LinearLayout
+                    android:id="@+id/linearLayoutMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="@dimen/twelve_ten"
+                    android:id="@+id/textView71"
+                    android:background="@color/text_off_per"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/rule"
+                    android:layout_marginTop="@dimen/one"
+                    android:layout_alignStart="@+id/rule" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务说明"
+                    android:textSize="@dimen/twelve_ten"
+                    android:layout_marginLeft="@dimen/six"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/textView78"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView71"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="@dimen/twelve_ten"
+
+                    android:id="@+id/textView712"
+                    android:background="@color/text_off_per"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:layout_below="@+id/rule"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截图示范"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/textView782"
+                    android:layout_alignTop="@+id/textView712"
+                    android:layout_alignLeft="@+id/textView78"
+                    android:layout_alignStart="@+id/textView78" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout35"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:padding="@dimen/fifteen"
+                android:id="@+id/relativeLayout36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交截图"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/textView120"
+                    android:layout_marginLeft="@dimen/six"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="@dimen/twelve_ten"
+                    android:id="@+id/textView121"
+                    android:layout_marginTop="@dimen/one"
+                    android:background="@color/text_off_per"
+                    android:layout_alignParentTop="true"
+                   />
+            </RelativeLayout>
+            <com.jueda.ndian.view.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="@dimen/ten"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:background="@color/white"
+                android:verticalSpacing="@dimen/ten"
+                android:layout_below="@+id/relativeLayout36"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+</RelativeLayout>

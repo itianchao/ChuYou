@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.circle.view.CircleParticularsActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="圈设置"
+            android:gravity="center|left"
+            android:background="@color/white"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+        <RelativeLayout
+            android:id="@+id/OutsidersCircleRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Outsiders_and_circle"
+                android:gravity="center"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:layout_marginRight="@dimen/fifteen"
+                android:id="@+id/textView63" />
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageView21"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:layout_width="@dimen/fifty_five"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:text="@string/ban"
+                    android:drawableLeft="@drawable/sex_selector"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:button="@null"
+                    android:id="@+id/allow" />
+                <RadioButton
+                    android:layout_width="@dimen/fifty_five"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:background="#00000000"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:text="@string/Do_not_ban"
+                    android:drawableLeft="@drawable/sex_selector"
+                    android:button="@null"
+                    android:id="@+id/notallow" />
+
+            </RadioGroup>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="编辑圈资料"
+            android:gravity="center|left"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/ten"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+        <RelativeLayout
+            android:id="@+id/HeadImageRelativeLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_white_gray_relative" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:textColor="@color/ordinary"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:text="@string/circle_head"
+                />
+
+            <ImageView
+                android:id="@+id/ImageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fifteen"
+                android:src="@drawable/index_fenlei3x" />
+            <com.jueda.ndian.view.RoundCornerImageView
+                android:id="@+id/HeadImage"
+                android:layout_width="@dimen/sixty_five"
+                android:layout_height="@dimen/sixty_five"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/fifteen"
+                android:src="@drawable/head_circle"
+                android:layout_toLeftOf="@+id/ImageView13"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+        <RelativeLayout
+            android:id="@+id/CicleNameRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:background="@drawable/press_white_gray_relative">
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:textColor="@color/ordinary"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:text="@string/circle_name"
+                />
+
+            <ImageView
+                android:id="@+id/ImageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fifteen"
+                android:src="@drawable/index_fenlei3x" />
+
+            <TextView
+                android:id="@+id/CircleNameTextView"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten"
+                android:textColorHint="@color/text_gray"
+                android:layout_toLeftOf="@+id/ImageView11"
+                android:layout_toRightOf="@+id/TextView06"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/fifteen"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/IntroduceRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:background="@drawable/press_white_gray_relative" >
+
+            <ImageView
+                android:id="@+id/imageView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fifteen"
+                android:src="@drawable/index_fenlei3x" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:textColor="@color/ordinary"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:text="@string/Circle_to_introduce" />
+
+            <TextView
+                android:id="@+id/IntroduceEditText"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten"
+                android:textColorHint="@color/text_gray"
+                android:layout_toLeftOf="@+id/imageView67"
+                android:layout_toRightOf="@+id/textView40"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/fifteen" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+</RelativeLayout>

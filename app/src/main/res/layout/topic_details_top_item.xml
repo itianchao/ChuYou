@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/fromRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:paddingLeft="@dimen/fifteen"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_marginBottom="@dimen/ten"
+        android:paddingRight="@dimen/fifteen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/two_hundred"
+            android:text="来自：冯氏家族"
+            android:textSize="@dimen/fourteen_twelve"
+            android:textColor="@color/text_black"
+            android:id="@+id/CircleName"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView49"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/index_fenlei3x"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enter_the_circle"
+            android:textSize="@dimen/eleven_nine"
+            android:textColor="@color/text_gray"
+            android:id="@+id/Into_circle"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/five"
+            android:layout_toLeftOf="@+id/imageView49"
+            android:layout_toStartOf="@+id/imageView49" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_five"
+
+        android:background="@color/white"
+        >
+        <com.jueda.ndian.view.CircleImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:src="@drawable/head_portrait"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/headImageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:maxWidth="@dimen/one_hundred_and_fifty"
+            android:layout_height="@dimen/twenty_two"
+            android:text="冯氏家族"
+            android:id="@+id/NickNameTextView"
+            android:textColor="#377CE4"
+            android:singleLine="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_above="@+id/textView44"
+            android:layout_toRightOf="@+id/headImageView"
+            android:layout_toEndOf="@+id/headImageView"
+            android:layout_alignTop="@+id/headImageView" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/twenty_three"
+            android:id="@+id/textView44"
+            android:layout_toRightOf="@+id/headImageView"
+            android:layout_toEndOf="@+id/headImageView"
+            android:layout_alignBottom="@+id/headImageView">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/two"
+                android:src="@drawable/time"
+                android:id="@+id/imageView34" />
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1小时前"
+                android:textSize="@dimen/twelve_ten"
+                android:textColor="@color/text_gray_one"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView34"
+                android:layout_toEndOf="@+id/imageView34"
+                android:layout_marginLeft="@dimen/six"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Circle_the_main"
+            android:id="@+id/ishostTextView"
+            android:paddingLeft="@dimen/two"
+            android:paddingRight="@dimen/two"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ten_eight"
+            android:background="@drawable/kuang_corners_green_two"
+            android:layout_alignTop="@+id/NickNameTextView"
+            android:layout_toRightOf="@+id/NickNameTextView"
+            android:layout_toEndOf="@+id/NickNameTextView"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_marginTop="@dimen/two"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/fifteen"
+            android:textColor="@color/text_gray_one"
+            android:textSize="@dimen/twelve_ten"
+            android:text="9999"
+            android:id="@+id/lookNumberTextView"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/NickNameTextView"
+            android:layout_alignTop="@+id/NickNameTextView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/five"
+            android:id="@+id/imageView50"
+            android:src="@drawable/look"
+            android:layout_toLeftOf="@+id/lookNumberTextView"
+            android:layout_toStartOf="@+id/lookNumberTextView"
+            android:layout_alignTop="@+id/lookNumberTextView"
+            android:layout_alignBottom="@+id/lookNumberTextView" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容\n内容内容内容内容\n内容内容内容"
+        android:paddingTop="@dimen/fifteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:id="@+id/contentTextView"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:lineSpacingExtra="3dp"
+        android:textSize="@dimen/sixteen_fourteen"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"/>
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/fifteen"
+        
+        >
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_two"
+        android:layout_marginTop="@dimen/ten"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:id="@+id/textView49"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@drawable/xian_black"/>
+        <TextView
+            android:id="@+id/commentNumberTextView"
+            android:layout_width="match_parent"
+            android:gravity="center|left"
+            android:text="评论（3）"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_black"
+            android:paddingLeft="@dimen/fifteen"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sofa"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView41"
+            android:layout_marginTop="@dimen/thirty"
+            android:src="@drawable/sofa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Quickly_grab_sofa"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/imageView41"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/thirty"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

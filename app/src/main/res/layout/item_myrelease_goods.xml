@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen"
+        android:background="@drawable/press_white_gray_relative">
+        <ImageView
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/seventy"
+            android:layout_marginRight="@dimen/fifteen"
+            android:scaleType="centerCrop"
+            android:id="@+id/view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/thirteen_eleven"
+            android:id="@+id/title"
+            android:layout_alignTop="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:layout_toEndOf="@+id/view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:singleLine="true"
+            android:id="@+id/money"
+            android:textSize="@dimen/fourteen_twelve"
+            android:textColor="@color/text_red"
+            android:layout_marginBottom="@dimen/two"
+            android:layout_above="@+id/time"
+            android:layout_toRightOf="@+id/view"
+            android:layout_toEndOf="@+id/view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016/8/25 8:33"
+            android:singleLine="true"
+            android:textSize="@dimen/eleven_nine"
+            android:textColor="@color/text_gray"
+            android:id="@+id/time"
+            android:layout_alignBottom="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:layout_toEndOf="@+id/view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/number"
+            android:textSize="@dimen/eleven_nine"
+            android:textColor="@color/text_black"
+            android:layout_alignBottom="@+id/money"
+            android:layout_alignRight="@+id/money"
+            android:layout_alignEnd="@+id/money" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

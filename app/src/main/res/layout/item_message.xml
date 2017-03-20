@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/linearLayout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_five"
+        android:background="@drawable/press_white_gray_relative">
+        <com.jueda.ndian.view.CircleImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:layout_margin="@dimen/fifteen"
+            android:src="@drawable/head_portrait"
+            android:id="@+id/HeadImage" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/HeadImage"
+            android:layout_toRightOf="@+id/HeadImage"
+            android:layout_toEndOf="@+id/HeadImage"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/NickNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:singleLine="true"
+                android:textSize="@dimen/thirteen_eleven"
+                android:layout_marginBottom="@dimen/two"
+
+                android:textColor="@color/text_black"
+                android:text="名称"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/timeRelativeLayout"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/time"
+                    android:id="@+id/imageView62" />
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1小时前"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ten_eight"
+                    android:textColor="@color/text_gray_one"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_toRightOf="@+id/imageView62"
+                    android:layout_toEndOf="@+id/imageView62" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/contentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:singleLine="true"
+                android:gravity="bottom|left"
+                android:layout_weight="1"
+                android:textColor="@color/text_gray_one"
+                android:textSize="@dimen/ten_eight"
+                android:text="申请加入圈"/>
+            <TextView
+                android:id="@+id/disposeTextView"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="bottom|left"
+                android:layout_height="0dp"
+                android:textSize="@dimen/ten_eight"
+                android:text="处理人：某某"
+                android:textColor="@color/text_black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/thirty"
+            android:text="同意"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginBottom="@dimen/ten"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:background="@drawable/press_button_red_white"
+            android:textColor="@color/press_red_white_text"
+            android:id="@+id/consentButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+</LinearLayout>

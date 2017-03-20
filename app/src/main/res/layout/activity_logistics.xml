@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.LogisticsActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <TextView
+        android:id="@+id/logisticsTextView"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/twelve_ten"
+        android:padding="@dimen/fifteen"
+        android:textColor="@color/text_black"
+        android:lineSpacingExtra="3dp"
+        android:text=""
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include" />
+</RelativeLayout>

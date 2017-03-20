@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.me.view.RegisterUserActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/RelativeLayout1"
+
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/include">
+
+        <TextView
+            android:layout_width="@dimen/sixty"
+            android:layout_height="match_parent"
+            android:text="@string/nickname"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:gravity="center|left"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/NickNameTextView"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/text_black"
+            android:background="@null"
+            android:singleLine="true"
+            android:paddingRight="@dimen/ten"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentBottom="true"
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/relativeLayout6"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_alignLeft="@+id/RelativeLayout1"
+        android:layout_alignStart="@+id/RelativeLayout1"
+        android:layout_alignRight="@+id/RelativeLayout1"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_alignEnd="@+id/RelativeLayout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sex"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:id="@+id/textView7" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/textView7"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/textView7">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/man"
+                android:drawableRight="@drawable/sex_selector"
+                android:textColor="@color/select_red_white_color"
+                android:paddingRight="@dimen/register_have"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:paddingLeft="@dimen/register_have"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/man" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/register_have"
+                android:paddingLeft="@dimen/register_have"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:text="@string/woman"
+                android:textColor="@color/select_red_white_color"
+                android:drawableRight="@drawable/sex_selector"
+                android:button="@null"
+                android:id="@+id/woman" />
+        </RadioGroup>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/invitationCode_relativeLayout"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_alignRight="@+id/relativeLayout6"
+        android:layout_alignEnd="@+id/relativeLayout6"
+        android:layout_alignLeft="@+id/relativeLayout6"
+        android:layout_alignStart="@+id/relativeLayout6">
+
+        <TextView
+            android:layout_width="@dimen/sixty"
+            android:layout_height="match_parent"
+            android:text="@string/Invite_codes"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:gravity="center|left"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/invitationCode"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="@dimen/ten"
+            android:singleLine="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:hint="请输入邀请码（选填）"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView31"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:text="@string/submit"
+        android:id="@+id/submit"
+        android:textSize="@dimen/fifteenSize"
+        android:textColor="@color/white"
+        android:background="@drawable/press_button_bule_blue"
+        android:layout_below="@+id/invitationCode_relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:layout_marginTop="@dimen/thirty" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+
+
+</RelativeLayout>

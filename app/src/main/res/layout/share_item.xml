@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/press_white_gray_relative">
+    <ImageView
+        android:id="@+id/umeng_socialize_shareboard_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/umeng_socialize_qq_on" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/fifteen"
+        android:id="@+id/umeng_socialize_shareboard_pltform_name"
+        android:text="QQ空间"
+        android:layout_marginBottom="@dimen/twenty"
+        android:singleLine="true"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:layout_below="@+id/umeng_socialize_shareboard_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

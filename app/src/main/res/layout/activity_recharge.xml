@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.RechargeActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="@dimen/list_height"
+                android:layout_below="@+id/include"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/relativeLayout19">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:text="爱心豆：0"
+                    android:id="@+id/love_bean"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/six"
+                    android:layout_marginBottom="@dimen/six"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="去赚爱心豆"
+                    android:paddingRight="@dimen/ten"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:id="@+id/go_love"
+                    android:textColor="@color/press_orange_white_text"
+                    android:background="@drawable/press_button_white_orange_orange_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:textSize="@dimen/twelve_ten"
+                android:textColor="@color/text_black"
+                android:text="@string/Top_up_love_bean"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/ten"
+                android:id="@+id/textView76"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/relativeLayout19" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/relativeLayout17"
+                android:layout_below="@+id/textView76">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="105爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_one"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView55"
+                    android:layout_toEndOf="@+id/imageView55" />
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥10"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_one"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView55"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView29" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout20"
+                android:layout_below="@+id/relativeLayout21"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView56"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_two"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView56"
+                    android:layout_toEndOf="@+id/imageView56" />
+
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥30"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_two"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView57" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout21"
+                android:layout_below="@+id/relativeLayout22"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView61"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1080爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_three"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView61"
+                    android:layout_toEndOf="@+id/imageView61" />
+
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥100"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_three"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView64" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout22"
+                android:layout_below="@+id/relativeLayout23"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView73"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3160爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_four"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView73"
+                    android:layout_toEndOf="@+id/imageView73" />
+
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥300"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_four"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView74" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout23"
+                android:layout_below="@+id/relativeLayout24"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView75"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5320爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_five"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView75"
+                    android:layout_toEndOf="@+id/imageView75" />
+
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥500"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_five"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView76" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_five"
+                android:background="@color/white"
+                android:id="@+id/relativeLayout24"
+                android:layout_below="@+id/relativeLayout17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView77"
+                    android:src="@drawable/beans"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10640爱心豆"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/love_six"
+                    android:layout_marginLeft="@dimen/four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView77"
+                    android:layout_toEndOf="@+id/imageView77" />
+
+                <TextView
+                    android:layout_width="@dimen/seventy"
+                    android:layout_height="@dimen/twenty_seven"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="￥1000"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingLeft="@dimen/ten"
+                    android:textSize="@dimen/fifteen_thirteen"
+                    android:id="@+id/money_six"
+                    android:textColor="@color/press_red_white_text"
+                    android:background="@drawable/press_button_red_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView78" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fifteen"
+                    android:src="@drawable/function"
+                    android:id="@+id/imageView79" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱心豆的作用？"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:id="@+id/textView105"
+                    android:textColor="@color/text_black"
+                    android:layout_alignTop="@+id/imageView79"
+                    android:layout_toRightOf="@+id/imageView79"
+                    android:layout_toEndOf="@+id/imageView79" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱心豆可以兑换旅游票等产品 【10豆=1元】"
+                    android:textSize="@dimen/ten_eight"
+                    android:textColor="@color/text_gray"
+                    android:id="@+id/textView106"
+                    android:layout_alignBottom="@+id/imageView79"
+                    android:layout_toRightOf="@+id/imageView79"
+                    android:layout_toEndOf="@+id/imageView79" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xian_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/imageView79"
+                    android:layout_toEndOf="@+id/imageView79" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fifteen"
+                    android:src="@drawable/add"
+                    android:id="@+id/imageView80" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱心豆如何获得？"
+                    android:textSize="@dimen/thirteen_eleven"
+                    android:id="@+id/textView107"
+                    android:textColor="@color/text_black"
+                    android:layout_alignTop="@+id/imageView80"
+                    android:layout_toRightOf="@+id/imageView80"
+                    android:layout_toEndOf="@+id/imageView80" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="做任务和充值两种方式获得爱心豆"
+                    android:textSize="@dimen/ten_eight"
+                    android:textColor="@color/text_gray"
+                    android:id="@+id/textView108"
+                    android:layout_alignBottom="@+id/imageView80"
+                    android:layout_toRightOf="@+id/imageView80"
+                    android:layout_toEndOf="@+id/imageView80" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

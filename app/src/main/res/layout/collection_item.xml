@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/press_white_gray_relative"
+        android:layout_height="@dimen/seventy_five">
+        <com.jueda.ndian.view.CircleImageView
+            android:layout_width="@dimen/forty_five"
+            android:layout_height="@dimen/forty_five"
+            android:layout_margin="@dimen/fifteen"
+            android:background="@drawable/head_portrait"
+            android:id="@+id/HeadImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:maxWidth="@dimen/one_hundred_and_fifty"
+            android:layout_height="@dimen/twenty_two"
+            android:text="王氏慈善圈"
+            android:id="@+id/NameTextView"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:layout_alignTop="@+id/HeadImage"
+            android:layout_toRightOf="@+id/HeadImage"
+            android:layout_toEndOf="@+id/HeadImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/twenty_three"
+            android:text="王氏家族齐做慈善"
+            android:paddingRight="@dimen/fifteen"
+            android:singleLine="true"
+            android:gravity="center|left"
+            android:layout_marginRight="@dimen/sixty"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_gray_one"
+            android:id="@+id/contentTextView"
+            android:layout_alignBottom="@+id/HeadImage"
+            android:layout_alignLeft="@+id/NameTextView"
+            android:layout_alignStart="@+id/NameTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/twenty_two"
+            android:id="@+id/imageView45"
+            android:src="@drawable/look"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/six"
+            android:layout_alignTop="@+id/NameTextView"
+            android:layout_toRightOf="@+id/NameTextView"
+            android:layout_toEndOf="@+id/NameTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/twenty_two"
+            android:text="9999"
+            android:id="@+id/lookNumberTextView"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_gray_one"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/imageView45"
+            android:layout_toRightOf="@+id/imageView45"
+            android:layout_toEndOf="@+id/imageView45" />
+
+        <Button
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/thirty"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/press_button_gray_white_cancle"
+            android:textColor="@color/press_white_gray_text_cancle"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:text="@string/cancel"
+            android:id="@+id/cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/xian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/HeadImage"
+            android:layout_toEndOf="@+id/HeadImage" />
+    </RelativeLayout>
+</LinearLayout>

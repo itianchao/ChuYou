@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/press_white_gray_relative">
+        <ImageView
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/seventy"
+            android:layout_margin="@dimen/fifteen"
+            android:scaleType="centerCrop"
+            android:id="@+id/view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joyoung/九阳 DJ13B-C630SG 破壁免滤 超快捷 多功能"
+            android:id="@+id/TitleTextView"
+            android:layout_marginRight="@dimen/thirteen_eleven"
+            android:layout_alignTop="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:textSize="@dimen/thirteen_eleven"
+            android:maxLines="2"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/text_black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款："
+            android:id="@+id/textView10"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/twelve_ten"
+            android:layout_alignBottom="@+id/view"
+            android:layout_alignLeft="@+id/TitleTextView"
+            android:layout_alignStart="@+id/TitleTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/twelve_ten"
+            android:id="@+id/MoneyTextView"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_toRightOf="@+id/textView10"
+            android:layout_toEndOf="@+id/textView10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="@dimen/twelve_ten"
+            android:textColor="@color/text_red"
+            android:id="@+id/state"
+            android:layout_alignBaseline="@+id/MoneyTextView"
+            android:layout_alignBottom="@+id/MoneyTextView"
+            android:layout_alignRight="@+id/TitleTextView"
+            android:layout_alignEnd="@+id/TitleTextView" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xian_gray"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

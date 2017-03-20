@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="等级"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/forty"
+            android:background="@drawable/xian_gray"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="奉献值"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/fifteen_thirteen"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/offer"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/imageView28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如何增加经验？"
+            android:textColor="@color/text_black"
+            android:layout_marginRight="@dimen/fifteen"
+            android:singleLine="true"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:id="@+id/textView67"
+            android:layout_alignTop="@+id/imageView28"
+            android:layout_toRightOf="@+id/imageView28"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:text="经验随爱心豆增加而增加，并且增加数量同等。比如做出游任务获得10个爱心豆，那么经验也会增加10。"
+            android:textSize="@dimen/eleven_nine"
+            android:textColor="@color/text_gray"
+            android:layout_marginRight="@dimen/fifteen"
+            android:id="@+id/textView72"
+            android:layout_below="@+id/textView67"
+            android:layout_toRightOf="@+id/imageView28"
+            android:layout_toEndOf="@+id/imageView28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout8">
+        <com.jueda.ndian.view.CircleImageView
+            android:id="@+id/HeadImage"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:id="@+id/textView65"
+            android:textSize="@dimen/ten_eight"
+            android:src="@drawable/box"
+            android:layout_below="@+id/HeadImage"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1级"
+            android:gravity="center"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/ten_eight"
+            android:id="@+id/lv"
+            android:layout_alignRight="@+id/textView65"
+            android:layout_alignEnd="@+id/textView65"
+            android:layout_alignLeft="@+id/textView65"
+            android:layout_alignStart="@+id/textView65"
+            android:layout_alignBottom="@+id/textView65"
+            android:layout_alignTop="@+id/textView65" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:textSize="@dimen/thirteen_eleven"
+            android:textColor="@color/text_gray_two"
+            android:text="经验：30"
+            android:id="@+id/experience"
+            android:layout_below="@+id/textView65"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView24"
+            android:layout_marginTop="@dimen/thirty"
+            android:background="@drawable/xian_gray"
+            android:layout_below="@+id/experience"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

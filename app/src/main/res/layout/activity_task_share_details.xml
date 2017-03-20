@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.home.view.TaskShareDetailsActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <include
+        android:id="@+id/loadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_item"
+        android:layout_below="@+id/include"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/include" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/Delete_the_goods"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:visibility="gone"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:gravity="center"
+        android:id="@+id/delect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/statusBar" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/include"
+        android:visibility="gone"
+        android:layout_above="@+id/buttonLinearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen"
+                android:background="@drawable/press_white_gray_relative"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titles"
+                    android:layout_alignTop="@+id/imageView"
+                    android:text="标题"
+                    android:textSize="@dimen/eighteen_fifteen"
+                    android:textColor="@color/text_black"
+                    android:paddingRight="@dimen/fifteen"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_two"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:textSize="@dimen/twelve_ten"
+                    android:text="价格："
+                    android:id="@+id/money"
+                    android:layout_below="@+id/titles"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/money"
+                    android:layout_alignBottom="@+id/money"
+                    android:id="@+id/relativeLayout33"
+                    android:layout_toRightOf="@+id/money"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_toEndOf="@+id/money">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/twelve_ten"
+                        android:textColor="@color/text_gray"
+                        android:gravity="center_vertical"
+                        android:id="@+id/oldermoney"
+                        android:singleLine="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="ssss"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="@dimen/one"
+                        android:paddingRight="@dimen/two"
+                        android:layout_alignParentBottom="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:id="@+id/imageView94"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xian_gray_one"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/oldermoney"
+                        android:layout_alignEnd="@+id/oldermoney" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运费"
+                    android:id="@+id/freight"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_gray_two"
+                    android:layout_alignBottom="@+id/relativeLayout33"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="佣金："
+                    android:id="@+id/bean"
+                    android:layout_marginTop="@dimen/ten"
+                    android:textSize="@dimen/twelve_ten"
+                    android:textColor="@color/text_gray_two"
+                    android:layout_below="@+id/money"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="New Text"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:background="@color/white"
+                android:paddingRight="@dimen/fifteen"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingTop="@dimen/ten"
+                android:paddingBottom="@dimen/ten"
+                android:id="@+id/content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:paddingBottom="@dimen/fifteen"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/list_height"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteenSize"
+            android:id="@+id/buy"
+            android:background="@drawable/press_button_orange_orange1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/list_height"
+            android:text="@string/Share_make_bean"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteenSize"
+            android:id="@+id/share"
+            android:background="@drawable/press_button_right_red_red"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/tanchuangRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+</RelativeLayout>

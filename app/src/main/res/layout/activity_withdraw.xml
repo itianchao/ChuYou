@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.WithdrawActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:gravity="center"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:textColor="@color/press_white_gray_text"
+        android:text="@string/Submit_an_application"
+        android:id="@+id/submit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/include"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/fifteen"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可提现:0元"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:id="@+id/CanCarryTextView"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray_one"
+                android:textSize="@dimen/ten_eight"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginLeft="@dimen/two"
+                android:id="@+id/HintTextView"
+                android:text="@string/Warm_prompt_Withdrawal_is_yuan_is_the_minimum_amount"
+                android:layout_below="@+id/CanCarryTextView"
+                android:layout_toRightOf="@+id/imageView22"
+                android:layout_alignRight="@+id/exchange"
+                android:layout_alignEnd="@+id/exchange" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Beans_for"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:id="@+id/exchange"
+                android:textColor="@color/press_orange_white_text"
+                android:background="@drawable/press_button_white_orange_orange_white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/HintTextView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView22"
+                android:src="@drawable/warning"
+                android:layout_alignTop="@+id/HintTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/money"
+                android:id="@+id/moneyTextView"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:gravity="right|center"
+                android:paddingLeft="@dimen/fifteen"
+                android:singleLine="true"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:id="@+id/moneyEditText"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColorHint="@color/text_gray_one"
+                android:hint="@string/Please_enter_the_amount"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/moneyTextView"
+                android:layout_toEndOf="@+id/moneyTextView" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Pay_treasure_to_account"
+                android:id="@+id/textView79"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="right|center"
+                android:background="@null"
+                android:paddingLeft="@dimen/fifteen"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:id="@+id/payAccountEditText"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColorHint="@color/text_gray_one"
+                android:hint="@string/Please_enter_the_alipay_account"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView79"
+                android:layout_toEndOf="@+id/textView79" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xian_gray"
+            android:id="@+id/imageView63" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Real_name"
+                android:id="@+id/textView80"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textColor="@color/text_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="right|center"
+                android:background="@null"
+                android:id="@+id/NameTextView"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/fifteen_thirteen"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/text_gray_one"
+                android:paddingLeft="@dimen/fifteen"
+                android:singleLine="true"
+                android:hint="@string/Please_enter_the_account_number_corresponding_to_real_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView80"
+                android:layout_toEndOf="@+id/textView80" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

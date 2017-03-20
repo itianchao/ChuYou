@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".activity.me.view.MySellerOrderActivity">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+    <com.jueda.ndian.view.MyRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:divider="@null"
+        android:visibility="gone"
+        android:id="@+id/refreshListView"
+        android:layout_below="@+id/include" />
+    <include
+        android:id="@+id/loadingInclude"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_item"
+        android:visibility="gone"
+        android:layout_below="@+id/include" />
+    <include
+        android:id="@+id/failure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/failure"
+        android:visibility="gone"
+        android:layout_below="@+id/include" />
+</RelativeLayout>

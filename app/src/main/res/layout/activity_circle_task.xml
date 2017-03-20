@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ndian_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+
+    <com.jueda.ndian.view.IndexViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/radioGroup1">
+
+    </com.jueda.ndian.view.IndexViewPager>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:orientation="horizontal"
+        android:padding="0.5dp"
+        android:id="@+id/radioGroup1"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/experience"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/charity_top_selet_color"
+            android:background="@drawable/charity_centre_select"
+            android:checked="true"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/activity"
+            android:button="@null"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/charity_top_selet_color"
+            android:background="@drawable/charity_centre_select"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/questionnaire"
+            android:button="@null"
+            android:textSize="@dimen/fifteen_thirteen"
+            android:textColor="@color/charity_top_selet_color"
+            android:background="@drawable/charity_centre_select"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/radioButton3" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:text="@string/Send_the_task"
+        android:gravity="center"
+        android:textColor="@color/press_white_gray_text"
+        android:textSize="@dimen/fifteen_thirteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:id="@+id/send_task"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
